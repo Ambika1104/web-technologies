@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let msg1="global scope";
+        function stuDetails()
+        {
+            let course="python";
+            let msg2="function scope";
+            console.log(msg1); //global scope
+            console.log(msg2); //function scope
+            //console.log(msg3); //error
+            {
+                let msg3="block scope";
+                //var msg3="block scope"; // block doesn't create scope for var keyword
+                console.log(msg1); //global scope
+                console.log(msg2); //function scope
+                console.log(msg3); //block scope
+            }
+        }
+        stuDetails(); //f{...}
+        console.log(msg1); //global scope
+        //console.log(msg2); //error
+        //console.log(msg3); //error
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let student={
+                       stuId:"JSP101",
+                       firstName:"Prabhas",
+                       lastNmae:"Raju",
+                       fullName:"Prabhas Raju",
+                       birthYear:2000,
+                       age:24
+                    };
+        console.log(student); //{stuId: 'JSP101', firstName: 'Prabhas', lastNmae: 'Raju', fullName: 'Prabhas Raju', birthYear: 2000, …}
+
+        //accessing object props using . notation (objRef.propName)
+        let stuName=student.firstName;
+        let stuAge=student.age;
+        console.log(`Student name is ${stuName} & Student age is ${stuAge}`); //Student name is Prabhas & Student age is 24
+
+        //accessing object props using [] notation (objRef.propName)
+        stuName=student["firstName"];
+        stuAge=student["age"];
+        console.log(`Student name is ${stuName} & Student age is ${stuAge}`); //Student name is Prabhas & Student age is 24
+
+
+        
+    </script>
+</head>
+<body>
+    <h1>OBJECTS</h1>
+</body>
+</html>

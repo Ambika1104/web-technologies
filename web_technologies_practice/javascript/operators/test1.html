@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function main()
+        {
+
+        let a=5;
+        let b=2;
+        console.log(a+b); //7
+        console.log(a-b); //3
+        console.log(a*b); //10
+        console.log(a/b); //2.5
+        console.log(a%b); //1
+        console.log(Math.trunc(a/b)); //2 ( when we want to eliminate the decimal value)
+
+        //concatenation
+        let c=10;
+        let d=2;
+        let res=c+d;
+        console.log(res); //20
+        console.log("Addition of two numbers is ",res); //Addition of two numbers is 20
+        console.log(c+" + "+b+" = "+res); //10 + 2 = 20
+
+        let str=`Addition of two numbers is ${res}`;
+        console.log(str,typeof str); // Addition of two numbers is 12   string
+        console.log(`${a} + ${b} = ${res}`); //10 + 2 = 12
+
+
+        }
+        main();
+    </script>
+</head>
+<body>
+    <h3>Arithematic Operators</h3>
+</body>
+</html>

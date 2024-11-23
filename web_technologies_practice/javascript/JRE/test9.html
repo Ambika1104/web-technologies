@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+    let s1={
+               stuId:"JSP101",
+               firstname:"Ambika",
+               birthYear:2001
+            };
+    let s2={
+                stuId:"JSP102",
+               firstname:"Jungkook",
+               birthYear:1997
+            };
+
+    let calcAge=function()
+    {
+        console.log(this); //student object
+        let d1=new Date();
+        let currYear=d1.getFullYear();
+        let age=currYear-this.birthYear;
+        console.log(`Student Age is ${age}`);
+    };
+
+    //calcAge //regular f/n
+
+    calcAge.call(s1); //s1 object //Student Age is 23
+    calcAge.call(s2); //s2 object //Student Age is 27
+    </script>
+</head>
+<body>
+    <h1>
+        this keyword
+    </h1>
+    
+</body>
+</html>

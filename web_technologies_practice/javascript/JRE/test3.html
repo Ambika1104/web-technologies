@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        main();
+        function main()
+        {
+            sum(1,2); //Sum =3
+            sum(1,2,3); //Sum =6
+            sum(1,2,3,4); //Sum =10
+        }
+        function sum()
+        {
+            let sum=0;
+            for(let i=0;i<arguments.length;i++)
+            {
+                sum+=arguments[i];
+            }
+        console.log("Sum ="+sum);
+        }
+    </script>
+</head>
+<body>
+    <h1>Java Runtime Environment</h1>
+</body>
+</html>

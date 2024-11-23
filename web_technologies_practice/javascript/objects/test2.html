@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let student={
+                       stuId:"JSP101",
+                       firstName:"Prabhas",
+                       lastNmae:"Raju",
+                       fullName:"Prabhas Raju",
+                       birthYear:2000,
+                       age:24
+                    };
+        console.log(student); //{stuId: 'JSP101', firstName: 'Prabhas', lastNmae: 'Raju', fullName: 'Prabhas Raju', birthYear: 2000, …}
+
+        console.log(student.firstName); //Prabhas
+        console.log(student["firstName"]); //Prabhas
+
+        //accessing non-existing prop of an object
+        console.log(student.phNo); //undefined
+        console.log(student.address); //undefined
+    </script>
+</head>
+<body>
+    <h1>OBJECTS</h1>
+</body>
+</html>

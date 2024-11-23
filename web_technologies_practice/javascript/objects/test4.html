@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let student={
+                       "1stuId":"JSP101",
+                       firstName:"Prabhas",
+                       lastNmae:"Raju",
+                       "full Name":"Prabhas Raju",
+                       birthYear:2000,
+                       age:24
+                    };
+        console.log(student);
+        let stuAge="age";
+        console.log(stuAge,typeof stuAge); //age string
+        console.log(student.stuAge); //undefined    checks for stuAge in student object
+        console.log(student["stuAge"]); // undefined    checks for stuAge in student object
+        console.log(student[stuAge]); // 24   check for a variable with stuAge name first then stuAge="age", the it go to student object with "age" and search for it
+    </script>
+</head>
+<body>
+    <h1>OBJECTS</h1>
+</body>
+</html>

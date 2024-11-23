@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function main()
+        {
+            let y=2001;
+            let m=2;      
+
+            switch(m)    // 28 days
+            {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                console.log("31 Days");
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                console.log("30 Days");
+                break;
+            case 2:
+                if((y%400==0) || (y%4==0 && y%100!=0))
+                    console.log("29 Days");
+                else console.log("29 Days");
+                break;
+            default:
+                console.log("Invalid Month");
+        }
+
+        }
+        main();
+
+    </script>
+</head>
+<body>
+    <h1>number of days in a month of specified year</h1>
+    
+</body>
+</html>

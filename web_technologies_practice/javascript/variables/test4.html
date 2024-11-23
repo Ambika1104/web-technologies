@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let a=100; //global variable
+        function main(){
+            console.log(a);
+            let b=10; //local variable
+            console.log(b);
+        }
+        main();
+        console.log(a);
+        console.log(b); //not possible, its a local variable which is only accessible in its scope
+    </script>
+</head>
+<body>
+    <h1>
+        js variables
+    </h1>
+</body>
+</html>

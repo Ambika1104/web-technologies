@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+    //"use strict"
+    let a=10;
+    console.log(a); //10
+
+    let thisVal=this;
+    console.log(thisVal); //window object
+
+    function main()
+    {
+        let obj1=this;
+        console.log(obj1); //window object //undefined in strict mode
+    }
+    main();
+
+    let m1=function()
+    {
+        let obj2=this;
+        console.log(obj2); //window object //undefined in strict mode
+    
+    };
+    m1();
+    
+    let m2=()=>
+    {
+        let obj3=this;
+        console.log(obj3); //window object
+    }
+    m2();
+    </script>
+</head>
+<body>
+    <h1>
+        this keyword
+    </h1>
+    
+</body>
+</html>

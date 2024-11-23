@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function main()
+        {
+            //n=2; //prime
+            n=prompt("enter the value: ");
+            if (n>1)
+                {
+                    for(i=2; i<=n/2; i++)
+                    {
+                        if(n%i==0)
+                        {
+                            console.log("not a prime");
+                            return;
+                        }
+                    }
+                    console.log("prime");
+            }
+            else
+            {
+                console.log("not a prime");
+            }
+        }
+        main();
+        
+    </script>
+</head>
+<body>
+    <h1> prime numbers</h1>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function main()
+        {
+            /*
+            let a=1;
+            a++;
+            console.log(a); //2
+            
+            let a=1;
+            ++a;
+            console.log(a); //2
+            
+            let a=1;
+            let b=a++;
+            console.log(a,b); //2  1
+            
+            let a=1;
+            let b=++a;
+            console.log(a,b); //2  2
+            
+            let a=1;
+            a=a++;
+            console.log(a); //1
+            
+            let a=1;
+            a=++a;
+            console.log(a); //2
+            */
+            let a=1;
+            a=a++ + a; //3
+            console.log(a); //3
+            console.log(a++); //3
+            console.log(++a); //5
+            console.log(a++ - a); //-1
+
+            //console.log(a); //6
+
+        }
+        main();
+    </script>
+</head>
+<body>
+    <h1> ++ and --</h1>
+</body>
+</html>

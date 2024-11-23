@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+    main(); //main starts     m1 is executing     a value is 2        main ends
+    function main(){
+        console.log("main starts"); 
+        let a=m1();
+        console.log("a value is "+a); //2  (by default js returns "undefined")
+        console.log("main ends");
+    }
+    
+    function m1()
+    {
+        console.log("m1 is executing");
+        return 2;
+    }
+    </script>
+</head>
+<body>
+    <h1>return with some values </h1>
+    
+</body>
+</html>

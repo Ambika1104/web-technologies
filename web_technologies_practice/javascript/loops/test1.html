@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object</title>
+    <script>
+        function main()
+        {
+            let d1=new Date();
+            let day=d1.getDay();
+
+            console.log(day); // 6 saturday
+
+            let transc="Transaction Happened on ";
+
+            if(day==0)
+            {
+                transc+="Sunday"; //for one statement {} are optional
+            }
+            else if(day==1)
+            {
+                transc+="Monday";
+            }
+            else if(day==2)
+            {
+                transc+="Tuesday";
+            }
+            else if(day==3)
+            {
+                transc+="Wednesday";
+            }
+            else if(day==4)
+            {
+                transc+="Thursday";
+            }
+            else if(day==5)
+            {
+                transc+="Friday";
+            }
+            else if(day==6)
+            {
+                transc+="Saturday";
+            }
+            else 
+            {
+                console.log("Invalid Input");
+            }
+
+            console.log(transc);
+        }
+        
+        main();
+    </script>
+</head>
+<body>
+    <h1> name of day </h1>
+    
+</body>
+</html>

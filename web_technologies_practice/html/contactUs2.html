@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width:450px;
+            margin:200px auto;
+            padding:50px;
+            border-radius: 20px;
+            background-color: black;
+        }
+        label{
+            font-size: 20px;
+            color:white;
+        }
+        input{
+            padding: 20px;
+            border-radius: 20px;
+        
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color:red;
+            border-radius: 20px;
+            margin:50px 0px 20px 10px;
+            
+        }
+        .child{
+            margin-bottom:30px;
+        }
+        .parent{ 
+            border:2px solid black;
+            width:750px;
+            border-radius: 20px;
+            margin:200px auto;
+            background-image: linear-gradient(135deg,fuchsia,purple,black);
+
+        }
+        span{
+            color:red;
+        }
+        .one{
+            width:380px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="container">
+        <div class="child">
+            <label align="center"><h2>Contact Us</h2></label>
+        </div>
+        <table>
+            <tr>
+                <td><label>FullName</label><span> *</span></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>E-mail</label><span> *</span></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" class="one"></td>
+            </tr>
+            <tr>
+                <td><label>Leave us a few words</label><span> *</span></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" class="one"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button>Submit</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

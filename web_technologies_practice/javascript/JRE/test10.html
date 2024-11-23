@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+    let t1={
+               travelsId:101,
+               travelsName:"VRL",
+               bookings:[]
+            };
+    let book=function(pName,seatNo)
+    {
+        console.log(`${pName} booked seat in ${this.travelsName} travels with seat no ${seatNo}`);
+    };
+    book.call(t1,"Jungkook",27); //Jungkook booked seat in VRL travels with seat no 27
+
+    book.apply(t1,["Ambika", 23]); //Ambika booked seat in VRL travels with seat no 23
+
+    let arr1=["Ambika", 23];
+    book.apply(t1,arr1); //Ambika booked seat in VRL travels with seat no 23
+
+    
+    let b=book.bind(t1,"Bangtan",13);
+    b(); //Bangtan booked seat in VRL travels with seat no 13
+
+    let a=book.bind(t1,"Bangtan");
+    a(13); //Bangtan booked seat in VRL travels with seat no 13
+    a(7); //Bangtan booked seat in VRL travels with seat no 7
+    a(11); //Bangtan booked seat in VRL travels with seat no 11
+
+    </script>
+</head>
+<body>
+    <h1>
+        call(), apply(), bind() methods
+    </h1>
+    
+</body>
+</html>

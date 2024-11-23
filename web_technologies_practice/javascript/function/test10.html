@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        main();
+        function main()
+        {
+          let res_1=calc(10,12,mul);
+          console.log("Result = "+ res_1); // Result = 120
+        }
+        function calc(a,b,type)
+        {
+            let res=type(a,b);
+            return res;
+        }
+        function sum(n1,n2)
+        {
+            return n1+n2;
+        }
+        function sub(n1,n2)
+        {
+            return n1-n2;
+        }
+        function mul(n1,n2)
+        {
+            return n1*n2;
+        }
+      </script>
+</head>
+<body>
+    <h1>Higher-order & Call-bck Functions</h1>
+</body>
+</html>

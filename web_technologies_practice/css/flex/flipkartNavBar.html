@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flipkart Nav Bar</title>
+    <link rel="stylesheet" href="./../../fontAwesome/fs/fontawesome-free-6.6.0-web/css/all.css">
+    <style>
+        
+
+        *{
+            margin:0px;
+        }
+        .container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap:100px;
+            background-color: rgb(103, 103, 173);
+            padding:15px;
+        }
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            color:white;
+        }
+        h1{
+            color:white;
+        }
+        button{
+            padding:10px;
+            font-size: 20px;
+            width: 100px;
+            height: 45px;
+            border-radius: 5px;
+            color:rgb(86, 86, 196);
+        }
+        input{
+            width: 300px;
+            height:40px;
+            font-size:15px;
+        }
+        #yellow{
+            color:yellow;
+        }
+        span{
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <div class="items">
+            <h1>FlipKart</h1>
+            <span>Explore <span id="yellow">Plus<i class="fa-solid fa-fan"></i></span></span>
+        </div>
+        <div class="items">
+            <input type="search" placeholder=" search for products, brands and more">
+        </div>
+        <div class="items">
+            <button>Login <i class="fa-solid fa-right-to-bracket"></i></button>
+        </div>
+        <div class="items"><a>Become Seller <i class="fa-solid fa-person-circle-check"></i></a></div>
+        <div class="items"><a>More <i class="fa-solid fa-angles-down"></i></a></div>
+        <div class="items"><a>Cart <i class="fa-solid fa-cart-shopping"></i></a></div>
+    </nav>
+    
+</body>
+</html>

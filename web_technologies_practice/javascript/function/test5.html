@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        /*
+        main();  //main ends 10 2 main ends
+        function main(){
+            console.log("main starts");
+            m1(10,2); //actual parameters or arguments
+            console.log("main ends");
+        }
+        function m1(n1,n2) //formal parameters
+        {
+            console.log(n1,n2);
+        }
+            */
+        main();
+        function main()
+        {
+            m1();           //  undefined undefined
+            m1(1);          //  1 undefined
+            m1(1,2);        //  1  2
+            m1(1,2,3,4);    //  1  2
+        }
+        function m1(n1,n2)
+        {
+            console.log(n1,n2);
+        }
+    </script>
+</head>
+<body>
+    <h1>function with parameters</h1>
+</body>
+</html>

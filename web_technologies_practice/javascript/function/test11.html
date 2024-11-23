@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        main();
+        function main()
+        {
+            sum(11,2); //13
+            sum(11.2,3); //14.3
+            sum("jsp",3); //0jsp3
+        }
+        function sum(...arr)
+        {
+            let sum=0;
+            for(let i=0;i<arr.length;i++)
+            {
+                sum=sum+arr[i];
+            }
+            console.log("Sum = "+sum);
+        }
+      </script>
+</head>
+<body>
+    <h1>Rest operator</h1>
+</body>
+</html>

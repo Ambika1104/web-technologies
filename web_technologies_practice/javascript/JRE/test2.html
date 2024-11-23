@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function studentDetails(id,sname)
+        {
+            let course="JAVA";
+            var inst="Jspiders";
+            const branch="Marathahalli";
+
+            function printDetails()
+            {
+                console.log(`Student Id is ${id}, Student Name is ${sname}`);
+            }
+            let welcomeMsg=function()
+            {
+                console.log(`Hi ${sname}, Welcome to ${inst}`);
+            }
+            const greetMsg=()=>
+            {
+                let msg="Happy Birthday";
+                console.log(`Hey ${sname}, ${msg}!!!`);
+            }
+            //printDetails(); //Student Id is 111, Student Name is Jungkook
+           // welcomeMsg(); //Hi Jungkook, Welcome to Jspiders
+           greetMsg(); //Hey Jungkook, Happy Birthday!!!
+        }
+        studentDetails(111,"Jungkook"); 
+        
+    </script>
+</head>
+<body>
+    <h1>Java Runtime Environment</h1>
+</body>
+</html>
